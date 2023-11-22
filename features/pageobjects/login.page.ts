@@ -9,15 +9,15 @@ class LoginPage extends Page {
      * define selectors using getter methods
      */
     public get inputUsername () {
-        return $('#username');
+        return $('//android.widget.EditText[@resource-id="ion-input-0"]');
     }
 
     public get inputPassword () {
-        return $('#password');
+        return $('//android.widget.EditText[@resource-id="ion-input-1"]');
     }
 
     public get btnSubmit () {
-        return $('button[type="submit"]');
+        return $('//android.widget.Button[@text="Ingresar"]');
     }
 
     /**
